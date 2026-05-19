@@ -34,7 +34,7 @@
 &trans  &kp TAB                  &kp NUMBER_7  &kp NUMBER_8  &kp N9   &kp MINUS                               &kp RCTRL     &kp RIGHT_SHIFT  &mkp MB4        &kp RC(Z)        &kp BACKSPACE  &trans
 &trans  &kp KP_ASTERISK          &kp NUMBER_4  &kp N5        &kp N6   &kp COLON      &none      &trans        &kp QUESTION  &mkp LCLK        &msc SCRL_UP    &mkp RCLK        &kp RC(C)      &trans
 &trans  &kp FSLH                 &kp N1        &kp NUMBER_2  &kp N3   &kp RS(MINUS)  &kp ENTER  &kp RS(LBKT)  &kp RS(SQT)   &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp RC(V)      &trans
-&trans  &kp LANG_ZENKAKUHANKAKU  &kp DOT       &kp NUMBER_0  &kp DEL  &kp BACKSPACE  &none      &kp ENTER     &trans        &trans           &trans          &kp RC(Z)        &tog 1         &trans
+&trans  &kp LANG_ZENKAKUHANKAKU  &kp DOT       &kp NUMBER_0  &kp DEL  &kp BACKSPACE  &none      &kp ENTER     &trans        &trans           &trans          &tog 1           &kp RC(Z)      &trans
             >;
         };
 
