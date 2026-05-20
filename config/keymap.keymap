@@ -56,13 +56,13 @@
 &trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &trans  &kp SINGLE_QUOTE  &kp DQT    &kp GRAVE      &kp TILDE  &kp PIPE    &trans
 &trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &trans  &trans            &trans     &trans         &trans     &trans      &trans
             >;
+};
+&trackball_listener {
+    
+    input-processors = <&zip_scroll_scaler 2 1>, <&zip_temp_layer 3 2000>;
+    scroll-layers = <3>; 
         };
     };
 };
-// ファイルの一番最後、今ある記述の下にこれをそのまま貼り付けます
 
-&trackball_listener {
-    // レイヤー3（SCROLL）が有効なとき、トラックボールの動きをスクロールに変換
-    input-processors = <&zip_scroll_scaler 2 1>, <&zip_temp_layer 3 2000>;
-    scroll-layers = <3>; 
-};
+
