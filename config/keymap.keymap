@@ -57,12 +57,17 @@
 &trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &trans  &trans            &trans     &trans         &trans     &trans      &trans
             >;
 };
-&trackball_listener {
-    
-    input-processors = <&zip_scroll_scaler 2 1>, <&zip_temp_layer 3 2000>;
-    scroll-layers = <3>; 
         };
     };
 };
 
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        
+        input-processors = <&zip_scroll_scaler 2 1>, <&zip_temp_layer 3 2000>;
+        scroll-layers = <3>; 
+    };
+};
 
