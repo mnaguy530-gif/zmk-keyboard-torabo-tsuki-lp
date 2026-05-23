@@ -53,15 +53,20 @@
 &trans  &trans   &trans   &trans        &trans        &trans                      &trans            &trans     &trans         &trans     &trans      &trans
 &trans  &kp F1   &kp F2   &kp F3        &kp F4        &kp F5                      &kp HOME          &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp ESCAPE  &trans
 &trans  &kp F6   &kp F7   &kp F8        &kp F9        &kp F10     &trans  &trans  &kp LEFT          &kp DOWN   &kp UP_ARROW   &kp RIGHT  &kp TAB     &trans
-&trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &trans  &kp SINGLE_QUOTE  &kp DQT    &kp GRAVE      &tilde      &kp PIPE    &trans
+&trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &trans  &kp SINGLE_QUOTE  &kp DQT    &kp GRAVE      &kp TILDE  &kp PIPE    &trans
 &trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &trans  &trans            &trans     &trans         &trans     &trans      &trans
             >;
         };
     };
 };
 
-// 【今回変更】特定のデバイス名に依存しない、最もプレーンな上書き設定
-&{/trackball_listener} {
+// 【重要：修正箇所】torabo-tsuki専用の正しいリスナー名に書き換え
+&trackball_peripheral_listener {
+    input-processors = <&zip_scroll_scaler 2 1>;
+    scroll-layers = <3>;
+};
+
+&trackball_central_listener {
     input-processors = <&zip_scroll_scaler 2 1>;
     scroll-layers = <3>;
 };
