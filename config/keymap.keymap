@@ -5,6 +5,15 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+
+    behaviors {
+        sl: scroll_layer {
+            compatible = "zmk,behavior-input-two-axis";
+            #input-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -84,9 +93,8 @@
         device = <&trackball>;
 
         input-processors = <
-            &zip_scroll_scaler 1 10
+            &zip_temp_layer 3
+            &zip_scroll_scaler 2 15
         >;
-
-        scroll-layers = <3>;
     };
 };
