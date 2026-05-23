@@ -18,6 +18,10 @@
     keymap {
         compatible = "zmk,keymap";
 
+        // =========================
+        // Layer 0 : Base
+        // =========================
+
         layer_0 {
             bindings = <
 &none  &none      &none     &none     &none        &none                                  &none            &none  &none      &none      &none          &none
@@ -27,6 +31,10 @@
 &none  &kp LCTRL  &kp LGUI  &kp LALT  &lt 3 ENTER  &lt 2 SPACE  &lt 1 LANG5  &lt 1 ENTER  &lt 2 BACKSPACE  &none  &none      &mkp RCLK  &lt 3 AT_SIGN  &none
             >;
         };
+
+        // =========================
+        // Layer 1 : Mouse
+        // =========================
 
         layer_1 {
             bindings = <
@@ -38,6 +46,10 @@
             >;
         };
 
+        // =========================
+        // Layer 2 : Number
+        // =========================
+
         layer_2 {
             bindings = <
 &trans  &trans            &trans            &trans      &trans      &trans                      &trans          &trans         &trans            &trans             &trans         &trans
@@ -47,6 +59,10 @@
 &trans  &trans            &trans            &trans      &trans      &trans      &trans  &trans  &kp TAB         &kp DEL        &trans            &trans             &trans         &trans
             >;
         };
+
+        // =========================
+        // Layer 3 : Function + Scroll
+        // =========================
 
         layer_3 {
             bindings = <
@@ -60,13 +76,18 @@
     };
 };
 
-// 【確定修正】ログから見つかった、torabo-tsukiの正しい内部名前を指定してスクロール化
+
+// ========================================
+// Trackball Scroll Settings
+// Keyball-style Drag Scroll
+// ========================================
+
 &trackball_central_listener {
-    input-processors = <&zip_scroll_scaler 2 1>;
+    input-processors = <&zip_scroll_scaler 1 10>;
     scroll-layers = <3>;
 };
 
 &trackball_split_listener {
-    input-processors = <&zip_scroll_scaler 2 1>;
+    input-processors = <&zip_scroll_scaler 1 10>;
     scroll-layers = <3>;
 };
