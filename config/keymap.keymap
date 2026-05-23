@@ -77,7 +77,6 @@
 
     // ========================================
     // Trackball Scroll Settings
-    // Keyball-style Drag Scroll
     // ========================================
 
     trackball_listener {
