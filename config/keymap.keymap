@@ -60,7 +60,7 @@
     };
 };
 
-// 【確定修正】torabo-tsuki内部の正式なリスナー名（中央・分離）を指定
+// 【確定修正】ログから見つかった、torabo-tsukiの正しい内部名前を指定してスクロール化
 &trackball_central_listener {
     input-processors = <&zip_scroll_scaler 2 1>;
     scroll-layers = <3>;
