@@ -60,13 +60,13 @@
     };
 };
 
-// 【重要：修正箇所】torabo-tsuki専用の正しいリスナー名に書き換え
-&trackball_peripheral_listener {
+// 【確定修正】torabo-tsuki内部の正式なリスナー名（中央・分離）を指定
+&trackball_central_listener {
     input-processors = <&zip_scroll_scaler 2 1>;
     scroll-layers = <3>;
 };
 
-&trackball_central_listener {
+&trackball_split_listener {
     input-processors = <&zip_scroll_scaler 2 1>;
     scroll-layers = <3>;
 };
