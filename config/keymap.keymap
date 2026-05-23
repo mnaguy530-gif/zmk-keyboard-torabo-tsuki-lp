@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-// 【修正①】トラックボール（ポインティング機能）を有効化する必須マクロ
+// スクロール速度のベース設定
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 10
 
 / {
@@ -16,6 +16,23 @@
             key-positions = <28 29>;
             layers = <2>;
         };
+    };
+
+    // 【新アプローチ】新しくスクロール用プロサッサーを定義
+    my_scroll_scaler: my_scroll_scaler {
+        compatible = "zmk,input-processor-scaler";
+        #input-processor-cells = <2>;
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_HWHEEL INPUT_REL_WHEEL>;
+        track-remainders;
+    };
+
+    // トラックボールの動きを監視するリスナーをゼロから定義
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <&my_scroll_scaler 2 1>;
+        scroll-layers = <3>; 
     };
 
     keymap {
@@ -59,13 +76,6 @@
 &trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &trans  &kp SINGLE_QUOTE  &kp DQT    &kp GRAVE      &kp TILDE  &kp PIPE    &trans
 &trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &trans  &trans            &trans     &trans         &trans     &trans      &trans
             >;
-        }; // 【修正②】ここに余分な「};」が重なっていたのを綺麗に整理しました
+        };
     };
-};
-
-// 【修正③】ファイルの最末尾でトラックボールのリスナーを定義（エラー回避の記述法）
-&trackball_listener {
-    status = "okay";
-    input-processors = <&zip_scroll_scaler 2 1>;
-    scroll-layers = <3>; 
 };
