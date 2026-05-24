@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(go build:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(rm:*)",
+      "Bash(pkill:*)",
+      "Bash(npm cache clean:*)",
+      "Bash(ls:*)",
+      "Bash(timeout 30 npm install)",
+      "Bash(docker-compose up:*)",
+      "Bash(docker compose:*)",
+      "Bash(yarn install)",
+      "Bash(yarn dev)",
+      "Bash(*)",
+      "Bash(npm ls:*)",
+      "Bash(yarn remove:*)",
+      "Bash(yarn add @tabler/icons-react)",
+      "Bash(yarn build)",
+      "Bash(yarn add:*)",
+      "Bash(grep:*)",
+      "Bash(go run:*)",
+      "Bash(make:*)",
+      "Bash(go:*)",
+      "Bash(export PATH=$PATH:~/go/bin)",
+      "Bash(migrate -path migration -database \"postgres://postgres:rr4yTA4skPfUCZd@localhost:5432/serialer?sslmode=disable\":*)",
+      "Bash(sudo service:*)",
+      "Bash(service postgresql:*)",
+      "WebFetch(domain:zmk.dev)"
+    ],
+    "deny": []
+  }
+}
