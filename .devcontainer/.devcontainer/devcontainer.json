@@ -1,8 +1,0 @@
-{
-  "name": "Claude Codebox for torabo-tsuki",
-  "context": "..",
-  "dockerComposeFile": "../docker-compose.yml",
-  "service": "dev",
-  "workspaceFolder": "/workspace",
-  "remoteUser": "devuser"
-}
