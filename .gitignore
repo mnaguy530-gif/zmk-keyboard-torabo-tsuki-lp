@@ -1,0 +1,5 @@
+build_artifacts/
+.west/
+build/
+*.uf2
+.DS_Store
