@@ -42,11 +42,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans                   &trans   &trans        &trans   &trans                                &trans            &trans      &trans            &trans            &trans            &trans
-&trans  &kp TAB                  &kp N7   &kp N8        &kp N9   &kp MINUS                             &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &trans
-&trans  &kp KP_MULTIPLY          &kp N4   &kp N5        &kp N6   &kp PLUS   &trans         &trans      &kp F1            &kp F2      &kp F3            &kp F4            &kp F5            &trans
-&trans  &kp SLASH                &kp N1   &kp N2        &kp N3   &kp EQUAL  &kp CAPSLOCK   &bt BT_CLR  &kp F6            &kp F7      &kp F8            &kp F9            &kp F10           &trans
-&trans  &kp LANG_ZENKAKUHANKAKU  &kp DOT  &kp NUMBER_0  &kp DEL  &trans     &kp BACKSPACE  &kp ENTER   &mkp RCLK         &trans      &trans            &trans            &trans            &trans
+&trans  &trans                   &trans   &trans        &trans   &trans                                &trans         &trans           &trans    &trans     &trans         &trans
+&trans  &kp TAB                  &kp N7   &kp N8        &kp N9   &kp MINUS                             &kp RCTRL      &kp RIGHT_SHIFT  &mkp MB4  &kp RA(Z)  &kp BACKSPACE  &trans
+&trans  &kp KP_MULTIPLY          &kp N4   &kp N5        &kp N6   &kp PLUS   &trans         &trans      &kp QMARK      &mkp LCLK        &kp F3    &mkp RCLK  &kp RC(C)      &trans
+&trans  &kp SLASH                &kp N1   &kp N2        &kp N3   &kp EQUAL  &kp CAPSLOCK   &bt BT_CLR  &kp SEMICOLON  &kp F7           &kp F8    &kp F9     &kp RC(V)      &trans
+&trans  &kp LANG_ZENKAKUHANKAKU  &kp DOT  &kp NUMBER_0  &kp DEL  &trans     &kp BACKSPACE  &kp ENTER   &mkp RCLK      &trans           &trans    &trans     &trans         &trans
             >;
         };
     };
