@@ -43,7 +43,7 @@
         layer_2 {
             bindings = <
 &trans  &trans           &trans   &trans        &trans   &trans                                  &trans             &trans           &trans    &trans     &trans         &trans
-&trans  &kp TAB          &kp N7   &kp N8        &kp N9   &kp MINUS                               &kp RCTRL          &kp RIGHT_SHIFT  &mkp MB4  &kp RA(Z)  &kp BACKSPACE  &trans
+&trans  &kp TAB          &kp N7   &kp N8        &kp N9   &kp MINUS                               &kp LEFT_BRACKET   &kp RIGHT_SHIFT  &mkp MB4  &kp RA(Z)  &kp BACKSPACE  &trans
 &trans  &kp KP_MULTIPLY  &kp N4   &kp N5        &kp N6   &kp PLUS      &trans         &trans     &kp QMARK          &mkp LCLK        &kp UP    &mkp RCLK  &kp RC(C)      &trans
 &trans  &kp SLASH        &kp N1   &kp N2        &kp N3   &kp KP_EQUAL  &none          &none      &kp RS(SEMICOLON)  &kp LEFT         &kp DOWN  &kp RIGHT  &kp RC(V)      &trans
 &trans  &none            &kp DOT  &kp NUMBER_0  &kp DEL  &trans        &kp BACKSPACE  &kp ENTER  &none              &trans           &trans    &trans     &kp RC(X)      &trans
