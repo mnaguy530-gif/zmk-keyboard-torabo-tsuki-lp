@@ -32,11 +32,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans            &trans            &trans            &trans            &trans                                   &trans         &trans      &trans            &trans         &trans           &trans
-&trans  &kp F1            &kp F2            &kp F3            &kp F4            &kp F5                                   &kp F6         &kp F7      &kp F8            &kp F9         &kp F10          &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)    &trans      &trans         &kp LS(N6)     &kp RS(N7)  &kp RS(NUMBER_8)  &kp RS(N9)     &none            &trans
-&trans  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4  &bt BT_CLR  &kp BACKSPACE  &none          &none       &kp RBKT          &kp BSLH       &kp PRINTSCREEN  &trans
-&trans  &kp LEFT_CONTROL  &kp LSHIFT        &kp LEFT_ALT      &kp ENTER         &mo 2         &trans      &kp RET        &kp RIGHT_GUI  &trans      &trans            &kp SEMICOLON  &none            &trans
+&trans  &trans            &trans            &trans            &trans            &trans                              &trans      &trans         &trans            &trans            &trans             &trans
+&trans  &kp F1            &kp F2            &kp F3            &kp F4            &kp F5                              &kp F6      &kp F7         &kp F8            &kp F9            &kp BACKSPACE      &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)    &trans      &trans    &kp LS(N6)  &kp RS(N7)     &kp RS(NUMBER_8)  &kp RS(N9)        &kp F10            &trans
+&trans  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4  &bt BT_CLR  &kp RGUI  &kp EQUAL   &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &kp LEFT_CONTROL  &kp LSHIFT        &kp LEFT_ALT      &kp ENTER         &mo 2         &trans      &kp RET   &none       &trans         &trans            &kp SEMICOLON     &kp PRINTSCREEN    &trans
             >;
         };
 
@@ -45,8 +45,8 @@
 &trans  &trans           &trans   &trans        &trans   &trans                                   &trans            &trans           &trans    &trans     &trans         &trans
 &trans  &kp TAB          &kp N7   &kp N8        &kp N9   &kp MINUS                                &kp LEFT_BRACKET  &kp RIGHT_SHIFT  &mkp MB4  &kp RA(Z)  &kp BACKSPACE  &trans
 &trans  &kp KP_MULTIPLY  &kp N4   &kp N5        &kp N6   &kp RS(COLON)  &trans         &trans     &kp QMARK         &mkp LCLK        &kp UP    &mkp RCLK  &kp RC(C)      &trans
-&trans  &kp SLASH        &kp N1   &kp N2        &kp N3   &none          &none          &none      &none             &kp LEFT         &kp DOWN  &kp RIGHT  &kp RC(V)      &trans
-&trans  &none            &kp DOT  &kp NUMBER_0  &kp DEL  &trans         &kp BACKSPACE  &kp ENTER  &none             &trans           &trans    &trans     &kp RC(X)      &trans
+&trans  &kp SLASH        &kp N1   &kp N2        &kp N3   &kp KP_EQUAL   &none          &none      &kp COLON         &kp LEFT         &kp DOWN  &kp RIGHT  &kp RC(V)      &trans
+&trans  &kp LEFT_SHIFT   &kp DOT  &kp NUMBER_0  &kp DEL  &trans         &kp BACKSPACE  &kp ENTER  &none             &trans           &trans    &trans     &kp RC(X)      &trans
             >;
         };
     };
