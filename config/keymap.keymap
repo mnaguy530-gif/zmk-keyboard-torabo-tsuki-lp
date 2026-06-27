@@ -49,5 +49,15 @@
 &trans  &kp LCTRL        &mt LEFT_SHIFT DOT  &mt LEFT_ALT NUMBER_0  &kp ENTER  &trans         &kp BACKSPACE  &kp ENTER            &trans            &trans           &trans          &kp ESC    &kp RC(X)        &trans
             >;
         };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &mo 3   &mo 2   &mo 1   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
