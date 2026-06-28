@@ -52,11 +52,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans           &trans              &trans                 &trans     &trans                                   &trans           &trans        &trans  &trans        &trans           &trans
-&trans  &kp TAB          &kp N7              &kp N8                 &kp N9     &kp MINUS                                &kp LEFT_SHIFT   &kp N7        &kp N8  &kp N9        &lt 2 BACKSPACE  &trans
-&trans  &kp KP_MULTIPLY  &kp N4              &kp N5                 &kp N6     &kp RS(COLON)  &trans         &trans     &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5  &kp N6        &kp MINUS        &trans
-&trans  &kp SLASH        &kp N1              &kp N2                 &kp N3     &kp LS(MINUS)  &mkp MB4       &mkp LCLK  &kp SLASH        &kp N1        &kp N2  &kp N3        &kp RS(COLON)    &trans
-&trans  &kp LCTRL        &mt LEFT_SHIFT DOT  &mt LEFT_ALT NUMBER_0  &kp ENTER  &trans         &kp BACKSPACE  &kp TAB    &kp ENTER        &trans        &trans  &kp NUMBER_0  &kp DOT          &trans
+&trans  &trans           &trans              &trans                 &trans  &trans                               &trans           &trans        &trans  &trans        &trans           &trans
+&trans  &kp TAB          &kp N7              &kp N8                 &kp N9  &kp MINUS                            &kp LEFT_SHIFT   &kp N7        &kp N8  &kp N9        &lt 2 BACKSPACE  &trans
+&trans  &kp KP_MULTIPLY  &kp N4              &kp N5                 &kp N6  &kp RS(COLON)  &trans     &trans     &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5  &kp N6        &kp MINUS        &trans
+&trans  &kp SLASH        &kp N1              &kp N2                 &kp N3  &kp LS(MINUS)  &kp LC(Z)  &mkp LCLK  &kp SLASH        &kp N1        &kp N2  &kp N3        &kp RS(COLON)    &trans
+&trans  &kp LCTRL        &mt LEFT_SHIFT DOT  &mt LEFT_ALT NUMBER_0  &mo 3   &mo 2          &mo 1      &kp TAB    &kp ENTER        &trans        &trans  &kp NUMBER_0  &kp DOT          &trans
             >;
         };
     };
