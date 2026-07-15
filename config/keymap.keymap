@@ -42,11 +42,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans           &trans              &trans                 &trans     &trans                                             &trans            &trans           &trans          &trans     &trans           &trans
-&trans  &kp TAB          &kp N7              &kp N8                 &kp N9     &kp MINUS                                          &kp LEFT_BRACKET  &kp RIGHT_SHIFT  &mkp MB4        &kp RC(Z)  &lt 2 BACKSPACE  &trans
-&trans  &kp KP_MULTIPLY  &kp N4              &kp N5                 &kp N6     &kp RS(COLON)  &trans         &trans               &kp QMARK         &mkp LCLK        &kp UP          &mkp RCLK  &kp RC(C)        &trans
-&trans  &kp SLASH        &kp N1              &kp N2                 &kp N3     &kp LS(MINUS)  &mkp MB4       &kp INTERNATIONAL_3  &kp SINGLE_QUOTE  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT  &kp RC(V)        &trans
-&trans  &kp LCTRL        &mt LEFT_SHIFT DOT  &mt LEFT_ALT NUMBER_0  &kp ENTER  &trans         &kp BACKSPACE  &kp ENTER            &trans            &trans           &trans          &kp ESC    &kp RC(X)        &trans
+&trans  &trans           &trans              &trans                 &trans     &trans                                        &trans            &trans           &trans          &trans     &trans           &trans
+&trans  &kp TAB          &kp N7              &kp N8                 &kp N9     &kp MINUS                                     &kp LEFT_BRACKET  &kp RIGHT_SHIFT  &mkp MB4        &kp RC(Z)  &lt 2 BACKSPACE  &trans
+&trans  &kp KP_MULTIPLY  &kp N4              &kp N5                 &kp N6     &kp RS(COLON)  &trans    &trans               &kp QMARK         &mkp LCLK        &kp UP          &mkp RCLK  &kp RC(C)        &trans
+&trans  &kp SLASH        &kp N1              &kp N2                 &kp N3     &kp LS(MINUS)  &mkp MB4  &kp INTERNATIONAL_3  &kp SINGLE_QUOTE  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT  &kp RC(V)        &trans
+&trans  &kp LCTRL        &mt LEFT_SHIFT DOT  &mt LEFT_ALT NUMBER_0  &kp ENTER  &trans         &kp DEL   &kp ENTER            &trans            &trans           &trans          &kp ESC    &kp RC(X)        &trans
             >;
         };
 
